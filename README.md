@@ -1,2 +1,0 @@
-# LevyMo-haumea
-Name Levy 
