@@ -1,0 +1,67 @@
+#name {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: #610327;
+}
+h2 {
+    font-weight:900;
+    font-size: 2rem;
+    color: blanchedalmond;
+    border-style: double;
+}
+body {
+    height: 100vh;
+    font-size: 100%;
+    background-color: rgb(104, 209, 148);
+    color: rgb(62, 4, 117);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#About {
+    font-size: 1.3rem;
+    text-align: center;
+}
+#Experience {
+    text-align: center;
+}
+#Experience ul li {
+    list-style: none;
+    display: initial;
+    margin: 0.5em;
+    background-color: aqua;
+    color: rgb(3, 3, 14);
+    padding: 0.5em;
+    border-radius: 0.6em;
+    border-color: black;
+    border-style: solid;
+    font-weight: 700;
+}
+#profile-picture {
+    border-radius: 50%;
+    margin: 1em;
+    width: 60%;
+    border-color: rgb(120, 22, 212);
+    border-width: 1dvi;
+    border-style:outset;
+}
+#Connect {
+    text-align: center;
+}
+#Connect ul li {
+    list-style: none;
+    display: inline;
+    margin: 0.5em;
+    background-color: aqua;
+    color: rgb(3, 3, 14);
+    padding: 0.5em;
+    border-radius: 0.6em;
+    border-color: black;
+    border-style: solid;
+    font-weight: 700;
+}
+section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9511a1;
+}
