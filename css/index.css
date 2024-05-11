@@ -13,7 +13,6 @@ h2 {
 }
 body {
     height: 100vh;
-    font-size: 100%;
     background-color: rgb(104, 209, 148);
     color: rgb(62, 4, 117);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,46 +21,63 @@ body {
     font-size: 1.3rem;
     text-align: center;
 }
-#Experience {
-    text-align: center;
-}
-#Experience ul li {
-    list-style: none;
-    display: initial;
-    margin: 0.5em;
-    background-color: aqua;
-    color: rgb(3, 3, 14);
-    padding: 0.5em;
-    border-radius: 0.6em;
-    border-color: black;
-    border-style: solid;
-    font-weight: 700;
-}
 #profile-picture {
     border-radius: 50%;
     margin: 1em;
-    width: 60%;
+    width: 35%;
     border-color: rgb(120, 22, 212);
     border-width: 1dvi;
     border-style:outset;
 }
+#Experience {
+    text-align: center;
+}
+.grid-container{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.grid-item{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    border-radius: 0.8em;
+    padding: 0.5em;
+}
+.one-experience{
+    display: flex;
+    flex-direction: column;
+}
+.date{
+    font-weight: bold;
+    margin-right: 1em;
+    min-width: fit-content;
+}
+#Skills{
+    text-align: center;
+}
+#Projects{
+    text-align: center;
+}
 #Connect {
     text-align: center;
 }
-#Connect ul li {
-    list-style: none;
-    display: inline;
-    margin: 0.5em;
-    background-color: aqua;
-    color: rgb(3, 3, 14);
+.connect-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.connect-item{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    border-radius: 0.8em;
     padding: 0.5em;
-    border-radius: 0.6em;
-    border-color: black;
-    border-style: solid;
-    font-weight: 700;
 }
 section {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #9511a1;
+    border-bottom: 1px solid #a50acc;
 }
