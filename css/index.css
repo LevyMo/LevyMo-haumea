@@ -1,3 +1,17 @@
+/* mobile first */
+#navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    padding-bottom: 0;
+    list-style: none;
+}
+#navigation {
+    position: fixed;
+    top: 0;
+    background-color: rgb(104, 209, 148);
+    width: 100%;
+}
 #name {
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
@@ -33,9 +47,8 @@ body {
     text-align: center;
 }
 .grid-container{
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr; 
     gap: 10px;
 }
 .grid-item{
@@ -44,6 +57,7 @@ body {
     background-color: aliceblue;
     border-radius: 0.8em;
     padding: 0.5em;
+    border-style: solid;
 }
 .one-experience{
     display: flex;
@@ -64,9 +78,7 @@ body {
     text-align: center;
 }
 .connect-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
     gap: 10px;
 }
 .connect-item{
@@ -75,9 +87,54 @@ body {
     background-color: aliceblue;
     border-radius: 0.8em;
     padding: 0.5em;
+    border-style: solid;
 }
 section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #a50acc;
+}
+/* current default code is for Mobile size. */
+/* media queries for desktop, tablet and smaller mobile screens. */
+@media only screen and (max-width: 500px) { /* for smaller mobile screens, adjust fonts to better fit the screen */
+    #navigation{ /* element 1 */
+        font-size: 9px;
+        background-color: aliceblue;
+    }
+    #name { /* element 2 */
+        font-size: 50px;
+        font-style: italic;
+    }
+    #About p { /* element 3 */
+        font-size: 18px;
+        font-weight: 900;
+    }
+}
+@media only screen and (min-width: 600px) { /* adjust for tablet screeens, grids to fit without awkward adjustment */
+    .grid-container { /* element 1 */
+        grid-template-columns: 1fr 1fr;
+        font-style: italic;
+    }
+    #name { /* element 2 */
+        text-align: center;
+        color:rgb(121, 70, 3);
+    }
+    .one-exp-heading{ /* element 3 */
+        font-size: 2rem;
+        font-weight: 10;
+    }
+}
+@media only screen and (min-width: 1150px) { /* adjust for Desktop screens, grids to fit without awkward adjustment */
+    .grid-container { /* element 1 */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        color: rgb(145, 4, 138);
+    }
+    #navigation ul { /* element 2 */
+        gap: 15em;
+        font-size: 18px;
+    }
+    #name { /* element 3 */
+        text-align: center;
+        color:antiquewhite;
+    }
 }
