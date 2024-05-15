@@ -4,22 +4,15 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let copyright = document.createElement('p');
 copyright.innerHTML = `Levy Morales ${thisYear}`;
-footer.textContent = copyright.innerHTML;
+footer.appendChild(copyright);
 let body = document.body;
 body.appendChild(footer);
-// Skills
-let Skills = ["JavaScript", "HTML", "CSS"];
+// skills
+let skills = ["JavaScript", "HTML", "CSS"];
 let skillsSelection = document.getElementById("Skills");
-let skillsList = document.getElementById("Skills-items");
-for (let i = 0; i < Skills.length; i++) {
+let skillsList = skillsSelection.querySelector('ul');
+for (let i = 0; i < skills.length; i++) {
     let skill = document.createElement('li');
-    skill.textContent = Skills[i];
-    skillsSelection.appendChild(skill);
-};
-// Handling Messages
-let messagesForm = document.getElementsByName('leave-message');
-messagesForm.addEventListener('submit', function(){
-    let form = messagesForm.target;
-    let usersName = messagesForm.target.usersName;
-    let email = messagesForm.target.usersEmail;
-});
+    skill.textContent = skills[i];
+    skillsList.appendChild(skill);
+}
