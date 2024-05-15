@@ -5,8 +5,8 @@ let thisYear = today.getFullYear();
 let copyright = document.createElement('p');
 copyright.innerHTML = `Levy Morales ${thisYear}`;
 footer.textContent = copyright.innerHTML;
-let body = document.body
-body.appendChild(footer)
+let body = document.body;
+body.appendChild(footer);
 // Skills
 let Skills = ["JavaScript", "HTML", "CSS"];
 let skillsSelection = document.getElementById("Skills");
@@ -15,4 +15,11 @@ for (let i = 0; i < Skills.length; i++) {
     let skill = document.createElement('li');
     skill.textContent = Skills[i];
     skillsSelection.appendChild(skill);
-}
+};
+// Handling Messages
+let messagesForm = document.getElementsByName('leave-message');
+messagesForm.addEventListener('submit', function(){
+    let form = messagesForm.target;
+    let usersName = messagesForm.target.usersName;
+    let email = messagesForm.target.usersEmail;
+});
