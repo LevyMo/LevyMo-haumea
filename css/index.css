@@ -138,3 +138,19 @@ section {
         color:antiquewhite;
     }
 }
+#Skills ul li{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    border-radius: 0.8em;
+    padding: 0.5em;
+    border-style: solid;
+}
+#messages ul li{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    border-radius: 0.8em;
+    padding: 0.5em;
+    border-style: solid;
+}
