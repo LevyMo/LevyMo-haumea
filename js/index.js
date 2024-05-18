@@ -35,7 +35,7 @@ messageForm.addEventListener('submit', function(event) {
     removeButton.setAttribute('type', 'button');
     removeButton.addEventListener('click', function(event){
         let entry = removeButton.parentNode;
-        entry.removeChild;
+        entry.remove();
     });
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
