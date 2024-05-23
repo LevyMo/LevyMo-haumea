@@ -67,4 +67,3 @@ function displayRepos(repositories){
     projectList.appendChild(project);
   }
 }
-//tesdt
