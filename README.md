@@ -1,4 +1,4 @@
 # LevyMo-haumea
 Name Levy
-[My Open AI Project]
+[My Open API Project]
 ()
