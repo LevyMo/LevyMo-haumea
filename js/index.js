@@ -41,3 +41,29 @@ messageForm.addEventListener('submit', function(event) {
     messageList.appendChild(newMessage);
     messageForm.reset();
 });
+// Fetch API
+// GIT
+fetch('https://api.github.com/users/LevyMo/repos')
+.then(response => {
+    if (!response.ok) {
+      throw new Error('Request failed');
+    }
+    return response.json();
+  })
+  .then(data => {
+    let repositories = data;
+    console.log(repositories); // Do something with the data
+    displayRepos(repositories);
+  })
+  .catch(error => {
+    console.error('An error occurred:', error);
+  });
+function displayRepos(repositories){
+  let projectSection = document.getElementById('Projects');
+  let projectList = projectSection.querySelector('ul');
+  for (let i = 0; i < repositories.length; i++) {
+    let project = document.createElement('li');
+    project.innerHTML = repositories[i].name;
+    projectList.appendChild(project);
+  }
+}
