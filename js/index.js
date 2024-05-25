@@ -3,7 +3,7 @@ let footer = document.createElement('footer');
 let today = new Date();
 let thisYear = today.getFullYear();
 let copyright = document.createElement('p');
-copyright.innerHTML = `Levy Morales ${thisYear}`;
+copyright.innerHTML = `<span>&copy;<span>Levy Morales ${thisYear}`;
 footer.appendChild(copyright);
 let body = document.body;
 body.appendChild(footer);
