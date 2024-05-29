@@ -96,7 +96,7 @@ section {
 }
 /* current default code is for Mobile size. */
 /* media queries for desktop, tablet and smaller mobile screens. */
-@media only screen and (max-width: 500px) { /* for smaller mobile screens, adjust fonts to better fit the screen */
+@media only screen and (max-width: 599px) { /* for smaller mobile screens, adjust fonts to better fit the screen */
     #navigation{ /* element 1 */
         font-size: 9px;
         background-color: aliceblue;
@@ -108,6 +108,9 @@ section {
     #About p { /* element 3 */
         font-size: 18px;
         font-weight: 900;
+    }
+    #navigation ul{
+        gap: 10px;
     }
 }
 @media only screen and (min-width: 600px) { /* adjust for tablet screeens, grids to fit without awkward adjustment */
@@ -123,14 +126,18 @@ section {
         font-size: 2rem;
         font-weight: 10;
     }
-}
+    #navigation ul {
+        gap: 5%;
+        font-size: 18px;    
+}}
+
 @media only screen and (min-width: 1150px) { /* adjust for Desktop screens, grids to fit without awkward adjustment */
     .grid-container { /* element 1 */
         grid-template-columns: 1fr 1fr 1fr 1fr;
         color: rgb(145, 4, 138);
     }
     #navigation ul { /* element 2 */
-        gap: 15em;
+        gap: 10%;
         font-size: 18px;
     }
     #name { /* element 3 */
@@ -138,19 +145,36 @@ section {
         color:antiquewhite;
     }
 }
-#Skills ul li{
+#Skills ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: aliceblue;
     border-radius: 0.8em;
     padding: 0.5em;
     border-style: solid;
 }
-#messages ul li{
+#messages ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: aliceblue;
     border-radius: 0.8em;
     padding: 0.5em;
     border-style: solid;
+    gap: 20px;
+}
+#messages ul li{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 0.8em;
+    padding: 0.5em;
+    border-style: solid;
+    gap: 20px;
+}
+#Skills ul li{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 0.8em;
+    padding: 0.5em;
 }
